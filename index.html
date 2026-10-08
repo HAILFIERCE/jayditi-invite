@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jay & Aditi's wedding invitation" />
+    <title>Jay & Aditi | A Celebration of Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="petals" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Jay and Aditi home">J<span>&</span>A</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a><a href="#events">Events</a><a href="#venue">Venue</a><a href="#rsvp">RSVP</a><a href="#contact">Contact</a>
+      </nav>
+      <button class="sound-button" type="button" aria-pressed="false" title="Toggle ambience">♫</button>
+    </header>
+
+    <main>
+      <section id="home" class="hero section-image" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">A celebration of love</p>
+          <div class="monogram" aria-hidden="true">J<span>&</span>A</div>
+          <h1 id="hero-title">Jay <span>&amp;</span> Aditi</h1>
+          <p class="hero-date">24 January 2027 · Wedlock Greens</p>
+          <a class="button" href="#events">Celebrate with us <b>→</b></a>
+        </div>
+        <a class="scroll-cue" href="#events">Discover our story <span>↓</span></a>
+      </section>
+
+      <section id="events" class="events section-frame" aria-labelledby="events-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Our occasions</p>
+          <span class="flourish">✦</span>
+          <h2 id="events-title">Celebrate Our <em>Special Moments</em></h2>
+          <p>Join us as we begin a beautiful chapter together.</p>
+        </div>
+        <div class="event-cards">
+          <article class="event-card">
+            <div class="event-icon">◌</div><p class="eyebrow">Engagement</p>
+            <strong>23</strong><span>January, 2027</span><small>Saturday · 7:00 PM onwards</small>
+          </article>
+          <article class="event-card featured">
+            <div class="event-icon">⌂</div><p class="eyebrow">Wedding</p>
+            <strong>24</strong><span>January, 2027</span><small>Sunday · 7:00 PM onwards</small>
+          </article>
+        </div>
+        <p class="promise">Two hearts, two dreams, one beautiful beginning.</p>
+      </section>
+
+      <section class="countdown section-image" aria-labelledby="countdown-title">
+        <div class="countdown-panel">
+          <p class="eyebrow">Counting down</p><span class="flourish">✦</span>
+          <h2 id="countdown-title">Counting <em>Down</em></h2>
+          <p class="subline">To a forever together</p>
+          <div class="timer" role="timer" aria-label="Countdown to the wedding">
+            <div><strong data-count="days">000</strong><span>Days</span></div>
+            <div><strong data-count="hours">00</strong><span>Hours</span></div>
+            <div><strong data-count="minutes">00</strong><span>Minutes</span></div>
+            <div><strong data-count="seconds">00</strong><span>Seconds</span></div>
+          </div>
+        </div>
+        <aside class="quote-card">✦<br /><em>More than events, these are moments we’ll cherish forever.</em></aside>
+      </section>
+
+      <section id="venue" class="venue section-frame" aria-labelledby="venue-title">
+        <div class="map-card"><iframe title="Map to Wedlock Greens Hotels & Resorts" src="https://www.google.com/maps?q=Wedlock%20Greens%20Hotels%20%26%20Resorts%2C%20Kastand%2C%20Jharkhand&output=embed" loading="lazy"></iframe></div>
+        <div class="venue-copy">
+          <p class="eyebrow">The venue</p><span class="flourish">✦</span>
+          <h2 id="venue-title">Wedlock Greens</h2><p class="place">Dhanbad, Jharkhand</p>
+          <p>A royal setting, a timeless celebration. Join us at Wedlock Greens for a wedding experience like no other.</p>
+          <a class="button" target="_blank" rel="noreferrer" href="https://www.google.com/maps/search/?api=1&query=Wedlock+Greens+Hotels+%26+Resorts+Kastand+Jharkhand">Get directions <b>→</b></a>
+        </div>
+      </section>
+
+      <section id="rsvp" class="rsvp section-image" aria-labelledby="rsvp-title">
+        <form class="rsvp-card" id="rsvp-form">
+          <p class="eyebrow">RSVP</p><span class="flourish">✦</span>
+          <h2 id="rsvp-title">Reserve <em>Your Seat</em></h2><p class="subline">We would love to celebrate with you</p>
+          <div class="form-grid">
+            <label class="wide"><span>Full name</span><input name="name" required placeholder="Your name" /></label>
+            <label><span>Mobile number</span><input name="phone" type="tel" required placeholder="Your mobile number" /></label>
+            <label><span>Will you be attending?</span><select name="attendance" required><option value="">Please select</option><option>Joyfully accepts</option><option>Regretfully declines</option></select></label>
+            <label><span>Number of guests</span><select name="guests" required><option value="">Select guests</option><option>1</option><option>2</option><option>3</option><option>4+</option></select></label>
+            <label><span>Food preference</span><select name="food"><option>Vegetarian</option><option>Non-vegetarian</option><option>Both</option></select></label>
+          </div>
+          <button class="button" type="submit">Confirm attendance <b>→</b></button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer id="contact" class="site-footer section-image">
+      <div><p class="eyebrow">Same souls · a more beautiful tomorrow</p><h2>Thank <em>You</em></h2><p>For being a part of our beautiful journey.</p><strong>Jay &amp; Aditi</strong></div>
+      <small>© 2027 Jay &amp; Aditi. All rights reserved.</small>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
